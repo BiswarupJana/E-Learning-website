@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Xlent Devs</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles/login.css" type="text/css" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./images/X.png" type="image/x-icon" />
+		<!-- Font Awseome Latest Version -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="nav">
+			<a href="#" class="logo"
+				><img class="logoimg" src="images/Logo.png" alt=""
+			/></a>
+			<div class="right-nav">
+				<ul class="nav-links">
+					<li class="sub-links-nav"><a href="index.html">Home</a></li>
+					<li class="sub-links-nav">
+						<a href="index.html#expertise">Expertise</a>
+					</li>
+					<li class="sub-links-nav">
+						<a href="index.html#projects">Projects</a>
+					</li>
+					<li class="sub-links-nav">
+						<a href="index.html#contact">Contact us</a>
+					</li>
+					<li class="sub-links-nav"><a href="index.html#about">About us</a></li>
+				</ul>
+				<div class="log-in">
+					<a href="login.html" class="login-btn">Log in</a>
+					<a class="signup-btn" href="signup.html">Sign up</a>
+					<button hidden class="logout-btn">Log Out</button>
+				</div>
+			</div>
+			<div id="hidden">
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+		<!-- login Section design-->
+		<section class="login-section">
+			<div class="login">
+				<img src="images/Log in illustration.png" alt="" />
+				<div class="forms">
+					<form action="#">
+						<h2>Log in to Xlent Devs</h2>
+						<!-- <h6>Continue with</h6> -->
+						<!-- <div class="options">
+							<div class="google">
+								<a href="#"
+									><img src="./images/Google.png" alt="" class="ref"
+								/></a>
+							</div>
+							<div class="fb">
+								<a href="#"
+									><img src="./images/Facebook.png" alt="" class="ref"
+								/></a>
+							</div>
+						</div> -->
+						<div class="or">
+							<hr />
+							<p>OR</p>
+							<hr />
+						</div>
+						<div class="details">
+							<input
+								type="text"
+								id="email"
+								placeholder="Username or Email"
+								required
+							/><br />
+							<input
+								type="password"
+								id="pass"
+								placeholder="Password"
+								required
+							/>
+							<p class="forget">Forget password ? <a href="#">need help</a></p>
+							<input
+								type="submit"
+								value="Log in"
+								class="btn"
+								id="login-submit-btn"
+							/>
+							<p class="signup">
+								Don't have an account yet ? <a href="signup.html">Sign up</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<script src="./js/easyHTTP.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="./js/auth.js"></script>
+	</body>
+</html>

@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+/* Header */
+/* HOMEPAGE */
+/* Navigation Bar  */
+
+.nav {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transition: 0.3s;
+	background-color: #b3daff;
+	padding: 14px 11px 14px 15px;
+}
+
+.nav .logo {
+	transition: 0.3s;
+}
+
+.logo img {
+	width: 70%;
+}
+
+.right-nav {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav .nav-links {
+	display: flex;
+}
+.nav .nav-links .sub-links-nav {
+	transition: 0.04s;
+	list-style: none;
+}
+
+.nav .nav-links .sub-links-nav:hover {
+	transition: 0.1s;
+	transform: scale(1.2);
+}
+
+.nav .nav-links .sub-links-nav a {
+	margin: 0 15px;
+	text-decoration: none;
+	font-family: "Nunito Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 600;
+}
+
+.fa-bars {
+	color: black;
+	font-size: 23px;
+}
+
+#hidden {
+	display: none;
+}
+
+.nav .log-in {
+	width: 180px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+
+.login-btn {
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: "Nunito Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	padding: 1px 8px;
+}
+
+.signup-btn {
+	background: black;
+	border-radius: 5px;
+	font-family: "Nunito Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 1px 8px;
+}
+
+.logout-btn {
+	border-radius: 5px;
+	color: white;
+	background-color: red;
+	height: 2rem;
+	padding: 1px 8px;
+	font-family: Nunito Sans;
+	border: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.login-btn:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	color: white;
+	background-color: #0085ff;
+	transition: 0.2s;
+	transform: scale(1.2);
+}
+
+.signup-btn:hover {
+	background: rgb(255, 255, 255);
+	color: #595c5f;
+}
+
+/* Login */
+
+.signup-section {
+	background: linear-gradient(180deg, #b3daff 25.03%, #ffffff 180%);
+	height: 83vh;
+}
+
+.signup {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.signup img {
+	position: relative;
+	mix-blend-mode: darken;
+	width: 315px;
+}
+
+.signup .forms {
+	position: relative;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	border-radius: 35px;
+	margin-top: 15px;
+}
+
+.forms h2 {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.forms h6 {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+	color: #7d7d7d;
+}
+
+.forms div.options {
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.forms .ref {
+	height: 35px;
+	width: 35px;
+}
+
+.forms .google {
+	background-color: #e5e5e5;
+	/* width: 50%; */
+	border-radius: 5px;
+	padding: 4px 40px;
+}
+.forms .fb {
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	/* width: 50%; */
+	padding: 4px 40px;
+}
+.forms div.or {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.forms div.or hr {
+	width: 160px;
+	height: 0%;
+	color: #9d9d9d;
+}
+.forms p {
+	font-family: "Nunito Sans", sans-serif;
+	color: #9d9d9d;
+	font-size: 14px;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.forms #email,
+.forms #username {
+	margin: 10px 0px 0px 0px;
+	background-color: #e5e5e5;
+	border-style: none;
+	height: 56px;
+	width: 310px;
+	border-radius: 5px;
+}
+.forms #pass {
+	margin: 10px 0 0 0px;
+	background-color: #e5e5e5;
+	border-style: none;
+	height: 56px;
+	width: 310px;
+	border-radius: 5px;
+}
+.forms #email::placeholder {
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "nunito sans", sans-serif;
+	color: #7d7d7d;
+}
+.forms #pass::placeholder {
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "nunito sans", sans-serif;
+	color: #7d7d7d;
+}
+
+.forms #username::placeholder {
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "nunito sans", sans-serif;
+	color: #7d7d7d;
+}
+
+.forms input[type="Text"] {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.forms input[type="password"] {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.checkBox {
+	display: flex;
+	align-items: baseline;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-left: 17px;
+}
+
+#checkPass {
+	margin-right: 7px;
+}
+
+.forms .forget {
+	text-align: center;
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+.forms .forget p {
+	color: #7d7d7d;
+}
+
+.forms .forget a {
+	color: #0085ff;
+	text-decoration: none;
+}
+
+.forms .btn {
+	cursor: pointer;
+	background-color: #0085ff;
+	padding: 10px 50px;
+	border-style: none;
+	border-radius: 7px;
+	font-family: "nunito sans", sans-serif;
+	font-weight: 700;
+	color: white;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+
+.forms .signup {
+	text-align: center;
+	margin: 9px;
+	font-size: 14px;
+}
+
+.forms .signup p {
+	color: #7d7d7d;
+}
+
+.forms .signup a {
+	color: #0085ff;
+	text-decoration: none;
+}
+
+/* Responsive Part */
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+	.signup {
+		flex-direction: column;
+	}
+
+	.signup img {
+		width: 290px;
+		margin: 20px 0;
+	}
+
+	.signup .forms {
+		width: 85%;
+	}
+
+	.signup-section {
+		height: auto;
+	}
+
+	.forms #email,
+	.forms #pass,
+	.forms #username {
+		width: 268px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+	.signup-section {
+		height: auto;
+	}
+
+	.signup {
+		flex-direction: column;
+	}
+
+	.signup .forms {
+		width: 75%;
+		margin-bottom: 10px;
+	}
+
+	.signup img {
+		width: 320px;
+		margin: 20px 0;
+	}
+
+	.forms #email,
+	.forms #pass,
+	.forms #username {
+		width: 268px;
+	}
+	.login-section {
+		height: auto;
+	}
+}
+
+.verification-modal {
+	height: 17rem;
+	width: 14rem;
+	position: fixed;
+	bottom: 14rem;
+	right: 43rem;
+	margin: 0 auto;
+	z-index: 1000;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 17px;
+	padding: 0.7rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.modal-heading {
+	margin: 0.3rem auto;
+	color: black;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+#code-input {
+	margin: 10px 0px 0px 0px;
+	background-color: #e5e5e5;
+	border-style: none;
+	height: 56px;
+	width: 200px;
+	padding-left: 20px;
+	border-radius: 5px;
+}
+
+.verify-btn {
+	margin: 1rem auto;
+	color: white;
+	background-color: #0085ff;
+	border: none;
+	width: 7rem;
+	font-family: "nunito sans", sans-serif;
+	font-weight: 700;
+	padding: 10px 0px;
+	border-style: none;
+	border-radius: 7px;
+}
+
+.verify-btn:hover {
+	cursor: pointer;
+}
+
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: -0.3rem;
+	height: 1.3rem;
+	border-bottom-left-radius: 17px;
+	background-color: red;
+	width: 2.3rem;
+	color: white;
+}
+
+.close-btn:hover {
+	background-color: white;
+	color: red;
+	cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.signup {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.signup .forms {
+		width: 60%;
+		margin-bottom: 10px;
+	}
+
+	.signup img {
+		width: 320px;
+		margin: 20px 0;
+	}
+
+	.forms #email,
+	.forms #pass,
+	.forms #username {
+		width: 289px;
+	}
+
+	.signup-section {
+		height: auto;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.signup img {
+		width: 290px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 992px) {
+	#hidden {
+		display: block;
+		cursor: pointer;
+	}
+
+	.right-nav {
+		display: none;
+	}
+
+	.nav {
+		justify-content: space-between;
+	}
+
+	.right-nav.show {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		width: 100%;
+		height: 85vh;
+		background-color: black;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.sub-links-nav {
+		margin: 35px 0;
+	}
+
+	.nav .nav-links .sub-links-nav a {
+		color: white;
+	}
+
+	.login-btn {
+		border: 2px solid white;
+		color: white;
+	}
+
+	.signup-btn {
+		background: white;
+		color: black;
+	}
+}

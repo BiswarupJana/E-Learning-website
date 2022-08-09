@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, #B3DAFF 25.03%, #FFFFFF 180%);
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 20vh;
+}
+
+.logo img{
+    max-width: 60%;
+}
+
+.btn-visit{
+    border: 3px solid #2C3138;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2C3138;
+    background-color: transparent;
+    padding: 4px 8px;
+}
+
+main{
+    height: 80vh;
+}
+
+.main-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navi{
+    width: 100%;
+    margin: 15px 0 25px 0;
+}
+
+.navi .nav-link{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-link{
+    list-style: none;
+    padding: 7px;
+}
+
+.sub-link a{
+    /* background: #FFFFFF; */
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2C3138;
+    padding: 0px 17px;
+}
+
+.sub-link a:active{
+    background: #FFFFFF;
+    transition: .3sec all;
+}
+
+.sub-link a:hover{
+    background: #FFFFFF;
+    transition: .3sec all;
+}
+
+.content{
+    padding: 20px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.head-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    position:relative;
+}
+
+.left-content,.right-content{
+    position: relative;
+}
+
+.middle-content{
+    -ms-flex-align: center;
+}
+
+.fa-user-friends{
+    position: absolute;
+    justify-content: center;
+    left: 470px;
+    color:#FFFFFF;
+}
+
+
+.addbtn{
+    background: #FF9494;
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    width: 30%;
+}
+
+
+.fa-search{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    color: #979797;
+}
+
+.search{
+    background: #E1E1E1;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color: #979797;
+    padding: 10px 35px 10px 10px;
+    outline: none;
+    border: none;
+}
+
+.proj-list-section{
+    overflow-y: scroll;
+    height: 315px;
+}
+
+.proj-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.lists{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.proj-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.item-left{
+    display: flex;
+}
+
+.item-left .img{
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.item-cont .proj-heading{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #696969;
+}
+
+.item-cont .proj-start-date{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #696969;
+}
+
+.item-right{
+    background: #C4C4C4;
+    border-radius: 50%;
+}
+
+.fa-edit{
+    padding: 10px;
+}
+
+.proj-list-section::-webkit-scrollbar {
+    width: 5px;
+}
+.proj-list-section::-webkit-scrollbar-track{
+    border: 5px solid #C4C4C4;
+}
+
+.proj-list-section::-webkit-scrollbar-thumb{
+    background-color:  #7D7D7D;
+}
+
+@media screen and (max-width:600px) {
+    .logo img {
+        max-width: 50%;
+    }
+
+    .sub-link a {
+        font-size: 18px;
+    }
+
+    .addbtn {
+        font-size: 16px;
+        padding: 8px 10px 8px 27px;
+    }
+
+    .fa-plus-square {
+        top: 9px;
+        left: 6px;
+    }
+
+    .search {
+        font-size: 16px;
+        padding: 8px 27px 8px 10px;
+    }
+
+    .item-cont .proj-heading {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 990px) {
+    .main-div{
+        flex-direction: row;
+    }
+
+    .navi {
+        width: 20%;
+        margin: 0;
+    }
+
+    .navi .nav-link {
+        flex-direction: column;
+    }
+
+    .sub-link {
+        margin: 20px 0;
+    }
+}
